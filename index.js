@@ -24,8 +24,6 @@ const randomIntegerFromInterval = (min, max) => {
   return Math.floor(Math.random() * (max - min + 1) + min);
 };
 
-console.log(randomIntegerFromInterval(min, max));
-
 let intervalId = null;
 
 function onStartBtn() {
@@ -40,6 +38,3 @@ function onStopBtn() {
   refs.startBtn.disabled = false;
   clearInterval(intervalId);
 }
-
-console.log(refs.startBtn);
-console.log(refs.stopBtn);
